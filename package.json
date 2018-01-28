@@ -1,0 +1,21 @@
+{
+  "name": "parcel_gulp_vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build": "parcel build js/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "parcel-bundler": "^1.5.1",
+    "parcel-plugin-vue": "^1.5.0",
+    "vue": "^2.5.13"
+  }
+}
