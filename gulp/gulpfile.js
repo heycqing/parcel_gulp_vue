@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var imgsmin = require('gulp-imagemin')
 var htmlmin = require('gulp-minify-html')
+var jsmin = require('gulp-uglify')
 
 gulp.task('imgmin',function(){
     console.log('images minify');
@@ -17,4 +18,11 @@ gulp.task('htmlmin',function(){
     .pipe(gulp.dest('../build/html'));
 })
 
-gulp.task('default',['imgmin','htmlmin']);
+gulp.task('jsmin',function(){
+    console.log('js minify');
+    gulp.src('../js/*.js')
+    .pipe(jsmin())
+    .pipe(gulp.dest('../build/js'))
+})
+
+gulp.task('default',['imgmin','htmlmin','jsmin']);
