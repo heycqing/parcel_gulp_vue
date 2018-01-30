@@ -10869,7 +10869,7 @@ return Vue$3;
 
 })));
 
-},{}],6:[function(require,module,exports) {
+},{}],5:[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = (window.__VUE_HOT_MAP__ = Object.create(null))
@@ -11099,7 +11099,7 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],5:[function(require,module,exports) {
+},{}],6:[function(require,module,exports) {
 var global = (1,eval)("this");
 'use strict';
 
@@ -18328,7 +18328,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.rerender("data-v-11dec43c", __vue__options__)
   }
 })()}
-},{"vue-hot-reload-api":6,"vue":5}],3:[function(require,module,exports) {
+},{"vue-hot-reload-api":5,"vue":6}],2:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -18375,7 +18375,7 @@ function Module(config) {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://localhost:52888/');
+  var ws = new WebSocket('ws://localhost:63275/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -18478,4 +18478,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,3])
+},{}]},{},[0,2])

@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"console.log('hello parcel ');","map":{"mappings":[{"source":"static/js/index.js","original":{"line":1,"column":0},"generated":{"line":1,"column":0}}],"sources":{"static/js/index.js":"console.log('hello parcel ');"},"lineCount":1}},"hash":"3129a6bcc8e54e98cd8c4590d99f6a26","cacheData":{"env":{}}}
