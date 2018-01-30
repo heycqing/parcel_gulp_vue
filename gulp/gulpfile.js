@@ -3,6 +3,7 @@ var imgsmin = require('gulp-imagemin')
 var htmlmin = require('gulp-minify-html')
 var jsmin = require('gulp-uglify')
 var cssmin = require('gulp-minify-css')
+var sassmin = require('gulp-sass')
 
 // 压缩图片，我这里压缩来一张png, 原来大小是106kb,压缩之后是62kb,可以在目录中可以看到
 gulp.task('imgmin',function(){
@@ -36,5 +37,13 @@ gulp.task('jsmin',function(){
      .pipe(cssmin())
      .pipe(gulp.dest('../build/css'))
  })
+
+//  压缩sass，
+gulp.task('sassmin',function(){
+    console.log('sass minify');
+    gulp.src('../sass/*.scss')
+    .pipe(sassmin())
+    .pipe(gulp.dest('../build/sass'))
+})
 // 默认任务
-gulp.task('default',['imgmin','htmlmin','jsmin','css_min']);
+gulp.task('default',['imgmin','htmlmin','jsmin','css_min','sassmin']);
