@@ -18316,8 +18316,8 @@ exports.default = {
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"vue"}},[_c('h1',[_vm._v("welcome vue!")]),_vm._v(" "),_c('p',[_vm._v(_vm._s(_vm.data))])])}
-__vue__options__.staticRenderFns = []
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"id":"vue"}},[_c('h1',[_vm._v("welcome vue!")]),_vm._v(" "),_c('p',[_vm._v(_vm._s(_vm.data))]),_vm._v(" "),_vm._m(0)])}
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('ul',[_c('li',[_c('a',{attrs:{"href":"http://www.baidu.com","target":"blank"}},[_c('span',[_vm._v("这是列表")])])]),_vm._v(" "),_c('li',[_c('a',{attrs:{"href":"/"}},[_c('span',[_vm._v("这是列表")])])]),_vm._v(" "),_c('li',[_c('a',{attrs:{"href":""}},[_c('span',[_vm._v("这是列表")])])]),_vm._v(" "),_c('li',[_c('a',{attrs:{"href":""}},[_c('span',[_vm._v("这是列表")])])])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
@@ -18375,7 +18375,7 @@ function Module(config) {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://localhost:63275/');
+  var ws = new WebSocket('ws://localhost:49571/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
