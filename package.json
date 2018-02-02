@@ -1,7 +1,7 @@
 {
   "name": "parcel_gulp_vue",
   "version": "1.0.0",
-  "description": "",
+  "description": "used git in MAC #####",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "build": "parcel build js/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "cqing",
   "license": "ISC",
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -25,5 +25,13 @@
   },
   "dependencies": {
     "gulp-imagemin": "^4.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heycqing/parcel_gulp_vue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heycqing/parcel_gulp_vue/issues"
+  },
+  "homepage": "https://github.com/heycqing/parcel_gulp_vue#readme"
 }
